@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One';
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 1px;
+    background: url(../assets/isometropolis.jpg);
+}
+
+body form[name="sendComment"] {
+    width: 50%;
+    margin: auto auto;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 8px 12px 0px rgba(39, 39, 39, 0.315);
+    padding: 50px;
+    margin-top: 10px;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input,
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+form .erroMsg {
+    font-family: Roboto;
+    font-weight: bold;
+    transform: translate(8px, -17px);
+    font-size: 0.8em;
+    color: red;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+}
+
+form label {
+    margin-left: 3px;
+    margin-bottom: 2px;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+form div label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+*::placeholder {
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+form button {
+    width: 40%;
+    align-self: center;
+    padding: 8px;
+    border-radius: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.8s;
+}
+
+form button:hover {
+    font-size: 1.1em;
+    width: 42%;
+    color: grey;
+}
